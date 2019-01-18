@@ -6,8 +6,7 @@
 name: Xianyan
 
 # Short bio or description (displayed in the header)
-description: My Learning Log
-
+description: Learn, write, share
 #
 # Flags below are optional
 #
@@ -55,7 +54,7 @@ footer-text:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus: seaofocean.disqus.com
+disqus: # seaofocean.disqus.com
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics:
