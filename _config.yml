@@ -22,12 +22,12 @@ avatar: https://avatars1.githubusercontent.com/u/10606312?s=400&u=862079475a02b5
 navigation:
   - name: Blog
     url: /
-  - name: About
-    url: /about
   - name: Archive
     url: /archive
   - name: Tags
     url: /tags
+  - name: About
+    url: /about
 
 # Pagination
 paginate: 5
