@@ -51,7 +51,6 @@ AutoML自动调参又可以称作黑箱超参优化（Blackbox hyperparameter op
 
 
 | 调参框架 | GitHub | star | 算法 | 语言 | 
-
 |:-----|:----|:----:|:----|:-----:|
 |  Hyperopt   |   https://github.com/hyperopt/hyperopt |  2358   |  1. Random Search  2. Tree of Parzen Estimators (TPE)  3. 设计中，未实现：  Bayesian optimization   | Python |  
 | BayesianOptimization  | https://github.com/fmfn/BayesianOptimization  | 1687  | Bayesian Optimization | Python  
