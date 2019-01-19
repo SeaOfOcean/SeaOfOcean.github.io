@@ -18,7 +18,7 @@ tags:
 ## 调参系统架构
 
 AutoML自动调参又可以称作黑箱超参优化（Blackbox hyperparameter optimization）。比较常见的做法是将调参系统和训练系统分离开，模型、数据和训练过程由用户来控制，调参系统给训练系统建议一组或多组参数，训练系统反馈结果，然后调参系统根据反馈结果产生下一组建议的参数。这个过程一直迭代直至满足了终止条件。
-![调参系统架构](images/hyper-opt.png)
+![调参系统架构]({{ site.baseurl }}/images/hyper-opt.png)
 
 ## 调参算法
 调参算法的输入是用户指定的参数及其范围，比如设定学习率范围为[0.0001, 0.01]。比较常见的算法为网格搜索，随机搜索和贝叶斯优化等。
@@ -48,16 +48,19 @@ AutoML自动调参又可以称作黑箱超参优化（Blackbox hyperparameter op
 ## 开源调参框架
 我调研了Github上开源的超参调优系统，按照受关注程度排序如下：
 
-| 调参框架 | GitHub | star | 算法 | 语言 |
-| ------ | ------ | ------ |------ | ------ | 
- |  Hyperopt   |   https://github.com/hyperopt/hyperopt |  2358   |  1. Random Search  2. Tree of Parzen Estimators (TPE)  3. 设计中，未实现：  Bayesian optimization   | Python |  
+
+
+| 调参框架 | GitHub | star | 算法 | 语言 | 
+
+|:-----|:----|:----:|:----|:-----:|
+|  Hyperopt   |   https://github.com/hyperopt/hyperopt |  2358   |  1. Random Search  2. Tree of Parzen Estimators (TPE)  3. 设计中，未实现：  Bayesian optimization   | Python |  
 | BayesianOptimization  | https://github.com/fmfn/BayesianOptimization  | 1687  | Bayesian Optimization | Python  
 | Spearmint|https://github.com/HIPS/Spearmint| 1062| Bayesian Optimization  | Python
 |Advisor |  https://github.com/tobegit3hub/advisor  |  320  | 1. Random Search Algorithm  2. Grid Search Algorithm  Baysian Optimization  3. Early Stop  | Python  
 | RoBO  | https://github.com/automl/RoBO  |230  |  Bayesian Optimization   | Python |
- | SMAC3   |  https://github.com/automl/SMAC3   | 208   | Baysian Optimization   | Python3  |
- |  Bayesopt   |  https://github.com/rmcantin/bayesopt   |  163   |   Bayesian Optimization  |  Python  |
- |  Autoweka |  https://github.com/automl/autoweka   |   146   |   Baysian Optimization   | Java   |
+| SMAC3   |  https://github.com/automl/SMAC3   | 208   | Baysian Optimization   | Python3  |
+|  Bayesopt   |  https://github.com/rmcantin/bayesopt   |  163   |   Bayesian Optimization  |  Python  |
+|  Autoweka |  https://github.com/automl/autoweka   |   146   |   Baysian Optimization   | Java   |
 
 ## 总结
 现在的调参系统基本上都是基于贝叶斯优化的思想，将调参任务作为一个黑箱优化的问题。
