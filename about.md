@@ -5,3 +5,5 @@ permalink: /about/
 ---
 
 Write, learn and share.
+
+![](/images/weixin.jpg)
